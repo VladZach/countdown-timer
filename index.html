@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown Timer</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="timer">
+      <header class="timer_controls">
+        <div data-seconds="20" class="controls_button">20 secs</div>
+        <div data-seconds="600" class="controls_button">10 mins</div>
+        <div data-seconds="900" class="controls_button">15 mins</div>
+        <div data-seconds="1800" class="controls_button">30 mins</div>
+        <form name="addMinutes" class="controls_form">
+          <input name="minutes" autocomplete="off" pattern="\d+" type="text" placeholder="Enter minutes (integer)">
+        </form>
+      </header>
+      <div class="timer_display">
+        <div class="time">0:00</div>
+        <div class="endtime"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
